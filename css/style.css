@@ -26,6 +26,8 @@ body{
     max-width: 120rem;
     margin: 0 auto;
     width: 90%;
+    /* algo nuevo de cc3 min hace lo mismo que lo de arriba*/
+    width: min(90%, 120rem);
 }
 a{
     text-decoration: none;
@@ -83,6 +85,9 @@ img{
     .header__texto{
         margin-top: 15rem;
     }
+}
+.barra{
+    padding-top: 4rem;
 }
 @media (min-width: 768px){
     .barra{
@@ -156,11 +161,11 @@ img{
 .cursos{
     list-style: none;
 }
-.winget-curso__lable{
+.winget-curso__lable,.curso__lable{
     font-family: var(--fuenteHeading);
     font-weight: bold;
 }
-.winget-curso__info{
+.winget-curso__info,.curso__info{
     font-weight: normal;
 }
 .winget-curso{
@@ -171,6 +176,49 @@ img{
     border: none;
     margin-bottom: 0;
 }
-.winget-curso__lable,.winget-curso__info{
+.winget-curso__lable,.winget-curso__info,.curso__lable,.curso__info{
     font-size: 2rem;
 }
+.footer{
+    background-color: var(--negro);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+}
+/**Sobre Nosotros**/
+@media (min-width: 768px){
+    .sobre-nosotros{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+.centrar-texto{
+    text-align: center;
+}
+.curso{
+    padding: 3rem 0;
+    border-bottom: 2px solid var(--gris);
+}
+@media (min-width: 768px){
+    .curso{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+}
+.curso:last-of-type{
+    border: none;
+}
+/*esto esta arriba en los winget
+.curso__lable{
+    font-family: var(--fuenteHeading);
+    font-weight: bold;
+}
+.curso__info{
+    font-weight: normal;
+}
+
+.curso__lable,.curso__info{
+    font-size: 2rem;
+}
+*/
