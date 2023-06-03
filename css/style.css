@@ -233,6 +233,20 @@ img{
 }
 */
 /** contacto **/
+.error{
+    background-color: rgb(185,0,0);
+    text-align: center;
+    padding: 1rem;
+    color: var(--blaco);
+    text-transform: uppercase;
+}
+.correcto{
+    background-color: rgb(52, 185, 0);
+    text-align: center;
+    padding: 1rem;
+    color: var(--blaco);
+    text-transform: uppercase;
+}
 .contacto-bg{
     background-image: url(../img/contacto.jpg);
     height: 40rem;
